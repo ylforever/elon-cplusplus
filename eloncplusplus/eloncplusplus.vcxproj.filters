@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\model_h">
+      <UniqueIdentifier>{ae0edc43-3f1c-40d5-98b9-2662bc10889f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\service_h">
+      <UniqueIdentifier>{a77635ab-150b-4345-aa6b-5f4eaab298f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\util_h">
+      <UniqueIdentifier>{e7d1c1ca-c7df-4fe1-a325-49262db95e38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\constant_h">
+      <UniqueIdentifier>{fc2fd9cb-9eee-49ad-91a1-10db3a2f36ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\model">
+      <UniqueIdentifier>{136821dc-3be3-48f6-84b3-dc2be4d7c976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\constant">
+      <UniqueIdentifier>{1ccbb641-a0d3-4f1a-b55b-b145509ce549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\util">
+      <UniqueIdentifier>{48b9b517-22d8-4cdd-a92d-be4a876c552f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\service">
+      <UniqueIdentifier>{e0bed50a-f6e3-453f-a341-7c10caf702b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="eloncplusplus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\user.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\CGreaterThan.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\employee.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\score.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model\score_iterator.cpp">
+      <Filter>源文件\model</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\model_h\user.h">
+      <Filter>头文件\model_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util_h\CGreaterThan.h">
+      <Filter>头文件\util_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model_h\elon_stack.h">
+      <Filter>头文件\model_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model_h\employee.h">
+      <Filter>头文件\model_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model_h\score.h">
+      <Filter>头文件\model_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model_h\score_iterator.h">
+      <Filter>头文件\model_h</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
