@@ -6,6 +6,10 @@ Score::Score(std::initializer_list<int> datas) {
 	for (auto data = datas.begin(); data != datas.end(); ++data) {
 		scores_.push_back(*data);
 	}
+
+	for (auto data : datas) {
+		scores_.push_back(data);
+	}
 }
 
 Score::iterator Score::Begin() {

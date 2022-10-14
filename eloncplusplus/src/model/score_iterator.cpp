@@ -19,5 +19,11 @@ bool ScoreIterator::operator != (Score::iterator iter) {
 	return this->index_ != iter.index_;
 }
 
+ScoreIterator& ScoreIterator::operator = (ScoreIterator& iter) {
+	this->score_ = iter.score_;
+	this->index_ = iter.index_;
+	return *this;
+}
+
 
 

@@ -26,7 +26,7 @@ CUser::~CUser()
 
 std::string CUser::toString() {
 	std::string str;
-	for (std::list<std::string>::iterator iter = lstName_.begin(); iter != lstName_.end(); ++iter) {
+	for (std::list<std::string>::const_iterator iter = lstName_.begin(); iter != lstName_.end(); ++iter) {
 		str.append(*iter);
 	}
 
@@ -36,14 +36,23 @@ std::string CUser::toString() {
 		str.append(std::to_string(*iter));
 	}
 
-	std::map<std::string, int>::iterator iter1 = mapAge_.find("张三");
+	std::map<std::string, int>::const_iterator iter1 = mapAge_.find("张三");
 	int age = iter1->second;
 	printf("%d", age);
 
-	for (std::map<std::string, int>::iterator iter = mapAge_.begin(); iter != mapAge_.end(); ++iter) {
+	for (std::map<std::string, int>::const_iterator iter = mapAge_.begin(); iter != mapAge_.end(); ++iter) {
 		str.append(iter->first).append(":").append(std::to_string(iter->second));
 	 }
 
 	return str;
+}
+
+void* CUser::operator new (size_t size) {
+	void* p = ::operator new(size);
+	return p;
+}
+
+void CUser::operator delete(void* p, size_t size) {
+	::operator delete(p);
 }
 

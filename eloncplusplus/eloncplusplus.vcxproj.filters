@@ -57,6 +57,18 @@
     <ClCompile Include="src\model\score_iterator.cpp">
       <Filter>源文件\model</Filter>
     </ClCompile>
+    <ClCompile Include="src\util\less_than.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\iostream_util.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\service\calc.cpp">
+      <Filter>源文件\service</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\memory.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\model_h\user.h">
@@ -76,6 +88,18 @@
     </ClInclude>
     <ClInclude Include="src\model_h\score_iterator.h">
       <Filter>头文件\model_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util_h\less_than.h">
+      <Filter>头文件\util_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util_h\iostream_util.h">
+      <Filter>头文件\util_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\service_h\calc.h">
+      <Filter>头文件\service_h</Filter>
+    </ClInclude>
+    <ClInclude Include="src\util_h\memory.h">
+      <Filter>头文件\util_h</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

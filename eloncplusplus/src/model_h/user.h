@@ -11,6 +11,9 @@ public:
 
 	std::string toString();
 
+	static void* operator new(size_t size);
+	static void operator delete(void* p, size_t size);
+
 private:
 	std::list<std::string> lstName_;
 	std::vector<int> vecAge_;

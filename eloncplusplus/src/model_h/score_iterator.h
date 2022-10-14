@@ -10,6 +10,8 @@ public:
 
 	bool operator != (Score::iterator iter);
 
+	ScoreIterator& operator = (ScoreIterator& iter);
+
 private:
 	Score& score_;
 	int index_;

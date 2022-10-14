@@ -109,7 +109,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>Default</LanguageStandard>
       <AdditionalIncludeDirectories>./</AdditionalIncludeDirectories>
       <AdditionalOptions>/Zc:__cplusplus %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
@@ -160,7 +160,11 @@
     <ClCompile Include="src\model\score.cpp" />
     <ClCompile Include="src\model\score_iterator.cpp" />
     <ClCompile Include="src\model\user.cpp" />
+    <ClCompile Include="src\service\calc.cpp" />
     <ClCompile Include="src\util\CGreaterThan.cpp" />
+    <ClCompile Include="src\util\iostream_util.cpp" />
+    <ClCompile Include="src\util\less_than.cpp" />
+    <ClCompile Include="src\util\memory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\model_h\elon_stack.h" />
@@ -168,7 +172,11 @@
     <ClInclude Include="src\model_h\score.h" />
     <ClInclude Include="src\model_h\score_iterator.h" />
     <ClInclude Include="src\model_h\user.h" />
+    <ClInclude Include="src\service_h\calc.h" />
     <ClInclude Include="src\util_h\CGreaterThan.h" />
+    <ClInclude Include="src\util_h\iostream_util.h" />
+    <ClInclude Include="src\util_h\less_than.h" />
+    <ClInclude Include="src\util_h\memory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
